@@ -37,7 +37,7 @@ public class CardEx2 {
             new Card("heart", 1),
             new Card("diamond", 1),
         };
-
+        // TODO:
         for (Card card : cards) {
             System.out.println("kind : " + card.getKind() + ", number : " + card.getNumber());
         }

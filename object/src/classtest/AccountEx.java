@@ -12,9 +12,18 @@ public class AccountEx {
         int balance = account.withdraw(50000);
         if (balance == -1) {
             System.out.println("잔액이 부족합니다");
-        }else{
+        } else {
             // System.out.println("계좌번호 : " + +"계좌주 : " + + "잔액 : " + );
             System.out.println("출금 후 현재 잔액 : " + balance + " 원");
         }
+        
+    //TODO: 대문자 =>> "주소" 넘어감 / 소문자 => "값" 넘어감
+        printAccount(account);
     }
+
+    //TODO: 대문자 =>> "주소" 넘어감 / 소문자 => "값" 넘어감
+    static void printAccount(Account account) {
+
+    }
+
 }
