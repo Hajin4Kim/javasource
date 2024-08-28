@@ -59,6 +59,23 @@ public class Account {
 
     public void setBalance(int balance) {
         this.balance = balance;
+        CreditLineAccount creditLineAccount = new CreditLineAccount("333-33" , "현빈", balance);
+        
+        System.out.println("마이너스 통장 계좌 잔액 확인: " + creditLineAccount);
     }
+
+
     
+
+
+
+
+
+
+
+
 }
+
+
+
+
