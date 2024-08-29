@@ -11,7 +11,10 @@ public class ProductEx {
         // 에어컨 구입
         buyer.buy(new Air());
 
+        buyer.summery();
 
+        System.out.println("현재 남은 돈: " + buyer.money + "만 원");
+        System.out.println("현재 보너스 점수: " + buyer.bonusPoint + "점");
 
 
     }
