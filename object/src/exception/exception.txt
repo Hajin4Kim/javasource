@@ -1,0 +1,36 @@
+exception(예외)
+
+1. 프로그램 오류
+    1) 컴파일 에러 : 컴파일 시 발생하는 에러
+        ==> 컴파일러가 동작하기에 코드 작성 시 바로 발견됨
+    2) 런타임 에러 : 런타임 시 발생하는 에러
+        ==> 실행 시, 예외 발생
+        1) 에러 : 메모리 부족 / 스택오버플로우 같은 복구하기 어려운 에러 
+        2) 예외 : 수습 가능한 상황
+    3) 논리적 에러 : 실행은 되나, 의도와 다르게 동작
+        ==> 
+
+예외 클래스
+    Object
+        |
+    Throwable
+        |
+    Exception                   Error
+        |
+    RunTimeException, ...
+
+예외 처리 : exception 발생 시 프로그램 비정상 종료가 되기 때문에 정상적인 실행상태 유지
+    1) try ~ catch
+    2) try ~ finally
+    3) try ~ catch ~ finally
+    => try 문만 오는건 안되고, finally 또는 catch 랑 짝을 맞춰 와야함
+
+try : 예외가 발생할 수 있는 코드 구문 작성
+catch : 예외 발생 시 무엇을 할 것인지 작성
+finally :  예외 여부와 상관없이 무조건 수행해야될 구문 작성
+        - 자원(sc.close()) 닫기
+
+1) Checked Exception(컴파일 시 예외가 체크)
+     = throw new Exception()
+2) UnChecked Exception(런타임 시 예외가 체크) //TODO: 요즘 트랜드
+     = throw new RunTimeException()

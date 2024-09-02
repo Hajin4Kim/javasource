@@ -17,7 +17,15 @@ public class ListEx2 {
 
         System.out.println(list.get(2));
         System.out.println(list.remove(2));
+
         System.out.println(list);
+
+        //TODO: 일반 LIST 에선, 향상된 for each 쓰는게 편하다 
+        for (Member member : list) {
+            String id = member.getId();
+            String name  = member.getName();
+        }
+
 
     }
 }
