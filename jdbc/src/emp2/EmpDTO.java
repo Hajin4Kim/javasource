@@ -94,6 +94,12 @@ public class EmpDTO {
     public void setDeptno(int deptno) {
         this.deptno = deptno;
     }
+    
+    public EmpDTO(int empno, int sal, int comm) {
+        this.empno = empno;
+        this.sal = sal;
+        this.comm = comm;
+    }
 
     @Override
     public String toString() {
